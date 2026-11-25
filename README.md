@@ -6,4 +6,4 @@ https://raborn-decision-sciences.github.io/wetware/ (works offline once opened; 
 Everything you do stays in your browser: nothing is sent anywhere. Export your data from
 System → Data.
 
-Release 0.1.0 (source 98ec5f1). The method notes are in `docs/`. All rights reserved; see LICENSE.
+Release 0.1.0 (source db4263c). The method notes are in `docs/`. All rights reserved; see LICENSE.

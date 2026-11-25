@@ -13,7 +13,7 @@
 (function (root) {
   'use strict';
   const WW = (root.WW = root.WW || {});
-  WW.build = Object.freeze(Object.assign({ target: 'web', version: '0.1.0', commit: '98ec5f1', paid: false }, root.WW_BUILD || {}));
+  WW.build = Object.freeze(Object.assign({ target: 'web', version: '0.1.0', commit: 'db4263c', paid: false }, root.WW_BUILD || {}));
 
   /** 'chromium' | 'webkit' | 'gecko' | 'node' | 'other', from a user-agent string. */
   function engineOf(ua) {
