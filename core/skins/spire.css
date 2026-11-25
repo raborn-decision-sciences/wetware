@@ -1,0 +1,308 @@
+html[data-skin='spire']:root,
+html[data-skin='spire']:root .ww-chrome,
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour {
+  --bg: #eef0f3;
+  --panel: #ffffff;
+  --panel-2: #f5f6f8;
+  --line: #dde1e7;
+  --line-hot: #b9c0cc;
+  --text: #17202e;
+  --dim: #5d6878;
+  --cyan: #1f3a68;
+  --magenta: #b3122e;
+  --amber: #8a6524;
+  --good: #1d7a4e;
+  --glow: none;
+  --font-display: 'Didot', 'Bodoni 72', 'Playfair Display', Georgia, serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+html[data-skin='spire']:root .wrap {
+        display: grid;
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 0 24px;
+        padding: 0;
+      }
+html[data-skin='spire']:root .wrap .mast {
+        grid-column: 1 / -1;
+        margin: 0;
+        padding: 16px 20px;
+        background: #17202e;
+        border: 0;
+        color: #fff;
+      }
+html[data-skin='spire']:root .wrap .brand h1 {
+        font-size: 30px;
+        color: #fff;
+        letter-spacing: 0.08em;
+        text-shadow: none;
+      }
+html[data-skin='spire']:root .wrap .brand h1::before {
+        content: '◆ SPIRE ';
+        color: #c9a45c;
+        font-size: 0.7em;
+        vertical-align: middle;
+      }
+html[data-skin='spire']:root .wrap .brand h1 em {
+        color: #c9a45c;
+        font-style: italic;
+      }
+html[data-skin='spire']:root .wrap .brand .sub {
+        color: #aab4c4;
+      }
+html[data-skin='spire']:root .wrap .brand .sub::after {
+        content: ' · Executive Cognitive Performance';
+      }
+html[data-skin='spire']:root .wrap .status,
+html[data-skin='spire']:root .wrap .status b {
+        color: #dfe5ee;
+      }
+html[data-skin='spire']:root .wrap .status .creds {
+        color: #c9a45c !important;
+      }
+html[data-skin='spire']:root .wrap .tabs {
+        flex-direction: column;
+        border: 0;
+        border-right: 1px solid var(--line);
+        padding: 18px 0;
+        margin: 0;
+        gap: 2px;
+      }
+html[data-skin='spire']:root .wrap .tab {
+        text-align: left;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 14px;
+        border: 0;
+        border-left: 3px solid transparent;
+        padding: 9px 18px;
+        color: var(--dim);
+      }
+html[data-skin='spire']:root .wrap .tab[aria-selected='true'] {
+        border-left-color: #c9a45c;
+        background: #fff;
+        color: var(--text);
+        font-weight: 600;
+      }
+html[data-skin='spire']:root .wrap .pane {
+        padding: 20px 20px 24px 0;
+      }
+html[data-skin='spire']:root .wrap .panel,
+html[data-skin='spire']:root .wrap .sub-card {
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(20, 30, 50, 0.06), 0 8px 24px rgba(20, 30, 50, 0.07);
+        padding: 16px 18px;
+      }
+html[data-skin='spire']:root .wrap .panel > h2 {
+        font-size: 22px;
+        color: var(--text);
+      }
+html[data-skin='spire']:root .wrap .panel > h2 small {
+        color: #8a6524;
+      }
+html[data-skin='spire']:root .wrap .sub-card h3 {
+        font-size: 20px;
+        color: var(--text);
+      }
+html[data-skin='spire']:root .wrap .comms {
+        position: relative;
+        border: 1px dashed var(--magenta);
+        border-radius: 6px;
+        padding: 10px 12px;
+        background: #fff6f7;
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 13px;
+      }
+html[data-skin='spire']:root .wrap .comms::after {
+        content: 'UNAUTHORISED CHANNEL';
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        background: var(--magenta);
+        color: #fff;
+        font: 700 10px/1 'Helvetica Neue', Arial, sans-serif;
+        letter-spacing: 0.14em;
+        padding: 4px 8px;
+        transform: rotate(2deg);
+      }
+html[data-skin='spire']:root .wrap .comms .from {
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 13px;
+      }
+html[data-skin='spire']:root .wrap .btn,
+html[data-skin='spire']:root .ww-stage > .bar .btn,
+html[data-skin='spire']:root .ww-chrome .btn {
+        border-radius: 6px;
+        background: #fff;
+        padding: 7px 14px;
+      }
+html[data-skin='spire']:root .wrap .btn.primary,
+html[data-skin='spire']:root .ww-stage > .bar .btn.primary,
+html[data-skin='spire']:root .ww-chrome .btn.primary {
+        background: var(--cyan);
+        border-color: var(--cyan);
+        color: #fff;
+      }
+html[data-skin='spire']:root .wrap .meter {
+        height: 6px;
+        border: 0;
+        background: #e9ecf1;
+      }
+html[data-skin='spire']:root .wrap .meter > i {
+        background: #c9a45c;
+      }
+html[data-skin='spire']:root .wrap .chip {
+        border-radius: 999px;
+      }
+html[data-skin='spire']:root .wrap .items li {
+        border-radius: 8px;
+        background: #fff;
+      }
+html[data-skin='spire']:root .ww-stage > .bar h2 {
+        font-family: var(--font-display);
+        color: var(--text);
+      }
+html[data-skin='spire']:root .wrap .kpi {
+        display: block;
+        font-family: var(--font-display);
+        font-size: 34px;
+        line-height: 1;
+        color: var(--text);
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .bm-chip {
+        border-radius: 4px;
+        background: #fff;
+        border: 1px solid #c9cfd8;
+        font-family: var(--font-display);
+        font-size: 22px;
+        color: #17202e;
+        padding: 4px 0;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .bm-lot {
+        border: 0;
+        border-radius: 8px;
+        background: #17202e;
+        color: #c9a45c;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .bm-lot small::before {
+        content: 'asset value · ';
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour svg.sh-map {
+        background: #fff;
+        border-radius: 8px;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-room {
+        fill: #f5f6f8;
+        stroke: #17202e;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-roomname {
+        fill: #8a93a3;
+        font-family: var(--font-display);
+        font-size: 10px;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-route {
+        stroke: #b9c0cc;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-locus {
+        fill: #fff;
+        stroke: #17202e;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-locus.on {
+        fill: #c9a45c;
+        stroke: #c9a45c;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-num {
+        fill: #17202e;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-num.on {
+        fill: #fff;
+      }
+html[data-skin='spire'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-label {
+        fill: #17202e;
+        font-family: var(--font-body);
+        font-weight: 600;
+      }
+@media (max-width: 720px) {
+  html[data-skin='spire']:root .wrap {
+          grid-template-columns: 1fr;
+        }
+  html[data-skin='spire']:root .wrap .tabs {
+          flex-direction: row;
+          flex-wrap: wrap;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          padding: 8px 12px 0;
+        }
+  html[data-skin='spire']:root .wrap .tab {
+          border-left: 0;
+          border-bottom: 3px solid transparent;
+          padding: 8px 10px;
+        }
+  html[data-skin='spire']:root .wrap .tab[aria-selected='true'] {
+          border-bottom-color: #c9a45c;
+        }
+  html[data-skin='spire']:root .wrap .pane {
+          padding: 16px 12px 20px;
+        }
+}
+
+/* debrief: a quarterly performance review */
+html[data-skin='spire']:root .ww-debrief::before {
+  content: 'Quarterly performance review';
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+html[data-skin='spire']:root .ww-debrief .big {
+  font-family: var(--font-display);
+  color: var(--text) !important;
+  font-size: 40px;
+  border-bottom: 2px solid #c9a45c;
+  padding-bottom: 8px;
+}
+html[data-skin='spire']:root .ww-debrief .kv {
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 8px 28px;
+}
+@media (max-width: 520px) {
+  html[data-skin='spire']:root .ww-debrief .kv {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+html[data-skin='spire']:root .ww-debrief .kv > div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2px;
+}
+html[data-skin='spire']:root .ww-debrief .kv dd {
+  font-family: var(--font-display);
+  font-size: 30px;
+}
+html[data-skin='spire']:root .ww-debrief .kv dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+/* sidebar layout: the footer spans both columns */
+html[data-skin='spire']:root .wrap > .tabs {
+  align-self: start;
+}
+html[data-skin='spire']:root .wrap > footer {
+  grid-column: 1 / -1;
+  padding: 0 20px;
+}
+/* trinkets sit on the dark masthead */
+html[data-skin='spire']:root .wrap .mast .plate {
+  background: #0f1622;
+  border-color: #3a4a63;
+  color: #e3c27d;
+}
+html[data-skin='spire']:root .wrap .mast .plate.rook {
+  color: #aab4c4;
+}
+html[data-skin='spire']:root .wrap .mast .trinkets {
+  color: #aab4c4;
+}

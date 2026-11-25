@@ -1,0 +1,270 @@
+html[data-skin='lace']:root,
+html[data-skin='lace']:root .ww-chrome,
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour {
+  --bg: #0a0511;
+  --panel: rgba(24, 12, 38, 0.62);
+  --panel-2: rgba(255, 255, 255, 0.05);
+  --line: #3a2450;
+  --line-hot: #5b3a7a;
+  --text: #f4ecff;
+  --dim: #b29dcc;
+  --cyan: #62f5d2;
+  --magenta: #ff6fb5;
+  --amber: #ffb38a;
+  --good: #62f5d2;
+  --glow: 0 0 18px rgba(98, 245, 210, 0.35);
+  --font-display: 'Futura', 'Avenir Next', 'Trebuchet MS', sans-serif;
+  --font-body: 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  color-scheme: dark;
+}
+html[data-skin='lace']:root .ww-decor {
+        background: radial-gradient(ellipse at 30% 20%, #241036 0%, transparent 55%), radial-gradient(ellipse at 80% 85%, #1c0d2c 0%, transparent 50%), #0a0511;
+      }
+html[data-skin='lace']:root .ww-decor .lace {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+html[data-skin='lace']:root .ww-decor .lace .soma {
+        animation: ww-lace-breathe 6s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+html[data-skin='lace']:root .ww-decor .lace .spark {
+        fill: none;
+        stroke-linecap: round;
+        stroke-dasharray: 10 2000;
+        animation: ww-lace-fire linear infinite;
+      }
+html[data-skin='lace']:root .wrap {
+        position: relative;
+        z-index: 1;
+      }
+html[data-skin='lace']:root .wrap .brand h1 {
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        font-size: 38px;
+        color: var(--cyan);
+        text-shadow: 0 0 24px rgba(98, 245, 210, 0.55);
+      }
+html[data-skin='lace']:root .wrap .brand h1 em {
+        color: var(--magenta);
+        text-shadow: 0 0 24px rgba(255, 111, 181, 0.55);
+      }
+html[data-skin='lace']:root .wrap .mast {
+        border-bottom: 0;
+      }
+html[data-skin='lace']:root .wrap .status::before {
+        content: '';
+        width: 9px;
+        height: 9px;
+        align-self: center;
+        border-radius: 50%;
+        background: var(--magenta);
+        box-shadow: 0 0 10px var(--magenta);
+        animation: ww-lace-beat 1.1s ease-in-out infinite;
+      }
+html[data-skin='lace']:root .wrap h2,
+html[data-skin='lace']:root .wrap h3 {
+        font-weight: 400;
+        letter-spacing: 0.08em;
+      }
+html[data-skin='lace']:root .wrap .panel > h2 {
+        font-size: 18px;
+        color: var(--cyan);
+      }
+html[data-skin='lace']:root .wrap .sub-card h3 {
+        font-size: 18px;
+      }
+html[data-skin='lace']:root .wrap .panel,
+html[data-skin='lace']:root .wrap .sub-card {
+        border: 1.5px solid transparent;
+        border-radius: 34px 26px 38px 12px / 28px 36px 24px 14px;
+        background:
+          radial-gradient(circle at 82% 18%, rgba(255, 111, 181, 0.12), transparent 32%),
+          radial-gradient(circle at 12% 88%, rgba(98, 245, 210, 0.1), transparent 36%),
+          linear-gradient(var(--panel), var(--panel)) padding-box,
+          linear-gradient(135deg, rgba(98, 245, 210, 0.7), rgba(255, 111, 181, 0.12) 50%, rgba(255, 111, 181, 0.7)) border-box;
+        box-shadow: inset 0 0 28px rgba(98, 245, 210, 0.07), 0 0 30px rgba(255, 111, 181, 0.06);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+      }
+html[data-skin='lace']:root .wrap .rig > :nth-child(2n),
+html[data-skin='lace']:root .wrap .grid > :nth-child(2n) {
+        border-radius: 22px 38px 16px 34px / 34px 22px 30px 20px;
+      }
+html[data-skin='lace']:root .wrap .tabs {
+        position: relative;
+        border: 0;
+        gap: 22px;
+        padding: 6px 4px;
+        overflow: hidden;
+      }
+html[data-skin='lace']:root .wrap .tabs::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(98, 245, 210, 0.5), rgba(255, 111, 181, 0.5));
+        z-index: -1;
+      }
+html[data-skin='lace']:root .wrap .tabs::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 2px);
+        left: -60px;
+        width: 60px;
+        height: 6px;
+        border-radius: 999px;
+        background: radial-gradient(closest-side, #fff, rgba(98, 245, 210, 0.8), transparent);
+        z-index: -1;
+        animation: ww-lace-axon 3.2s linear infinite;
+      }
+html[data-skin='lace']:root .wrap .tab {
+        border: 1.5px solid var(--line-hot);
+        border-radius: 999px;
+        background: #12081d;
+        text-transform: none;
+        letter-spacing: 0.04em;
+        font-size: 14px;
+        padding: 6px 16px;
+      }
+html[data-skin='lace']:root .wrap .tab[aria-selected='true'] {
+        border-color: var(--cyan);
+        color: #0a0511;
+        background: radial-gradient(circle at 50% 40%, #b9fff0, var(--cyan));
+        box-shadow: 0 0 18px rgba(98, 245, 210, 0.7), 0 0 44px rgba(98, 245, 210, 0.25);
+      }
+html[data-skin='lace']:root .wrap .btn,
+html[data-skin='lace']:root .ww-stage > .bar .btn,
+html[data-skin='lace']:root .ww-chrome .btn {
+        border-radius: 999px;
+        padding: 6px 16px;
+      }
+html[data-skin='lace']:root .wrap .btn.primary,
+html[data-skin='lace']:root .ww-stage > .bar .btn.primary,
+html[data-skin='lace']:root .ww-chrome .btn.primary {
+        background: linear-gradient(90deg, rgba(98, 245, 210, 0.28), rgba(255, 111, 181, 0.28));
+        color: var(--text);
+        box-shadow: 0 0 18px rgba(255, 111, 181, 0.2);
+      }
+html[data-skin='lace']:root .wrap .meter {
+        height: 8px;
+        border-radius: 999px;
+        border: 0;
+        background: rgba(255, 255, 255, 0.06);
+      }
+html[data-skin='lace']:root .wrap .meter > i {
+        border-radius: 999px;
+        background: radial-gradient(circle at 50% 50%, #fff 0 1.5px, transparent 2px) 0 0 / 18px 8px, repeating-linear-gradient(90deg, var(--cyan) 0 14px, transparent 14px 18px);
+        box-shadow: 0 0 12px rgba(98, 245, 210, 0.6);
+      }
+html[data-skin='lace']:root .wrap .chip {
+        border-radius: 999px;
+      }
+html[data-skin='lace']:root .wrap .comms {
+        border: 0;
+        padding: 12px 14px;
+        border-radius: 22px 22px 22px 4px;
+        background: rgba(255, 111, 181, 0.12);
+        box-shadow: 0 0 22px rgba(255, 111, 181, 0.12);
+      }
+html[data-skin='lace']:root .wrap .items li {
+        border-radius: 16px;
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .bm-chip {
+        aspect-ratio: 1;
+        min-height: 0;
+        padding: 0;
+        border-radius: 50%;
+        border: 1px solid rgba(98, 245, 210, 0.5);
+        background: radial-gradient(circle at 50% 45%, rgba(255, 111, 181, 0.5) 0 24%, rgba(98, 245, 210, 0.1) 26% 70%, transparent 72%);
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .bm-chip:disabled {
+        transform: scale(0.8);
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .bm-lot {
+        width: 130px;
+        aspect-ratio: 1;
+        justify-content: center;
+        border-radius: 50%;
+        border-color: var(--magenta);
+        color: var(--text);
+        box-shadow: 0 0 30px rgba(255, 111, 181, 0.35), inset 0 0 22px rgba(255, 111, 181, 0.25);
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-room {
+        rx: 16px;
+        fill: rgba(98, 245, 210, 0.04);
+        stroke: rgba(255, 111, 181, 0.5);
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-roomname {
+        fill: rgba(255, 111, 181, 0.35);
+        font-family: var(--font-display);
+        font-size: 9px;
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-route {
+        stroke: rgba(98, 245, 210, 0.55);
+        stroke-dasharray: none;
+        stroke-width: 1.2;
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-locus {
+        fill: #12081d;
+        stroke: #62f5d2;
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-locus.on {
+        fill: #62f5d2;
+        filter: drop-shadow(0 0 3px #62f5d2);
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-num {
+        fill: #d6c6ee;
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-num.on {
+        fill: #0a0511;
+      }
+html[data-skin='lace'][data-flavour='on']:root .ww-stage > .game.ww-flavour .sh-label {
+        fill: #62f5d2;
+        font-family: var(--font-body);
+      }
+
+/* debrief: a glowing headline */
+html[data-skin='lace']:root .ww-debrief .big {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 40px;
+  text-shadow: 0 0 24px rgba(98, 245, 210, 0.6);
+}
+@keyframes ww-lace-breathe {
+        50% {
+          transform: scale(1.18);
+          opacity: 0.75;
+        }
+      }
+@keyframes ww-lace-fire {
+        from {
+          stroke-dashoffset: 10;
+        }
+        to {
+          stroke-dashoffset: -2000;
+        }
+      }
+@keyframes ww-lace-beat {
+        0%,
+        40%,
+        100% {
+          transform: scale(1);
+        }
+        15% {
+          transform: scale(1.5);
+        }
+        28% {
+          transform: scale(1.15);
+        }
+      }
+@keyframes ww-lace-axon {
+        to {
+          left: 100%;
+        }
+      }

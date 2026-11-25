@@ -1,0 +1,14 @@
+rule,check,fired,detail
+1,coverage >= 0.85 in core cells: M1.0,TRUE,"cell 15 (items, d=0.5, ): 0.821; cell 30 (items, d=2, ): 0.794; cell 33 (items, d=2, ): 0.811"
+1,coverage >= 0.85 in core cells: M3.0,FALSE,min 0.851
+2,false positives <= 0.13 in null cells: M3.0,FALSE,max 0.129
+2,false positives <= 0.13 in core null cells: M1.0,TRUE,max 0.159
+3,prior variant M1.1 vs M1.0,FALSE,lower RMSE in 39% of core cells; min coverage 0.794
+3,prior variant M1.2 vs M1.0,FALSE,lower RMSE in 22% of core cells; min coverage 0.794
+3,prior variant M1.3 vs M1.0,FALSE,lower RMSE in 33% of core cells; min coverage 0.794
+3,prior variant M1.4 vs M1.0,FALSE,lower RMSE in 86% of core cells; min coverage 0.794
+3,prior variant M1.5 vs M1.0,FALSE,lower RMSE in 0% of core cells; min coverage 0.719
+5,unpooled beats pooled in heterogeneous-noise cells,FALSE,unpooled lower RMSE in 50% of cells
+7,trend model M1.0 beats no-trend M1.N on RMSE (non-null cells),FALSE,lower RMSE in 15% of non-null cells
+7,trend model M3.0 beats no-trend M3.N on RMSE (non-null cells),FALSE,lower RMSE in 30% of non-null cells
+6,comparator M1.R beats M1.0 on RMSE and coverage,FALSE,both better in 0% of core cells

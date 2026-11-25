@@ -1,0 +1,22 @@
+rule,check,fired,detail
+1,coverage >= 0.85 in core cells: M1.0,TRUE,"cell 29 (span, d=2, ): 0.718; cell 31 (rt, d=2, ): 0.789; cell 32 (span, d=2, ): 0.826; cell 33 (items, d=2, ): 0.752; cell 34 (rt, d=2, ): 0.817"
+1,coverage >= 0.85 in core cells: M2.0,TRUE,"cell 105 (rt, d=2, 3w): 0.738; cell 106 (span, d=2, 3w): 0.723; cell 107 (items, d=2, 3w): 0.526; cell 108 (rt, d=2, 4w): 0.701; cell 109 (span, d=2, 4w): 0.710; cell 110 (items, d=2, 4w): 0.499; cell 111 (rt, d=2, 6w): 0.723; cell 112 (span, d=2, 6w): 0.710; cell 113 (items, d=2, 6w): 0.518"
+1,coverage >= 0.85 in core cells: M3.0,TRUE,"cell 186 (, d=NA, ): 0.758; cell 188 (, d=NA, ): 0.686; cell 189 (, d=NA, ): 0.802; cell 190 (, d=NA, ): 0.824; cell 192 (, d=NA, ): 0.593; cell 193 (, d=NA, ): 0.777; cell 194 (, d=NA, ): 0.539; cell 195 (, d=NA, ): 0.718; cell 196 (, d=NA, ): 0.722"
+2,false positives <= 0.13 in core null cells: M1.0,FALSE,max 0.063
+2,false positives <= 0.13 in core null cells: M2.0,FALSE,max 0.029
+3,prior variant M1.1 vs M1.0,FALSE,lower RMSE in 28% of core cells; min coverage 0.718
+3,prior variant M1.2 vs M1.0,FALSE,lower RMSE in 28% of core cells; min coverage 0.718
+3,prior variant M1.3 vs M1.0,FALSE,lower RMSE in 28% of core cells; min coverage 0.759
+3,prior variant M1.4 vs M1.0,FALSE,lower RMSE in 53% of core cells; min coverage 0.243
+3,prior variant M1.5 vs M1.0,FALSE,lower RMSE in 44% of core cells; min coverage 0.718
+3,prior variant M2.1 vs M2.0,FALSE,lower RMSE in 60% of core cells; min coverage 0.000
+3,prior variant M2.2 vs M2.0,FALSE,lower RMSE in 20% of core cells; min coverage 0.861
+3,prior variant M2.3 vs M2.0,FALSE,lower RMSE in 20% of core cells; min coverage 0.882
+3,prior variant M2.5 vs M2.0,FALSE,lower RMSE in 22% of core cells; min coverage 0.485
+4,"4w matches 3w (power within 0.03, coverage): rt",TRUE,power 3w 0.019/0.043 vs 4w 0.013/0.028
+4,"4w matches 3w (power within 0.03, coverage): span",TRUE,power 3w 0.034/0.042 vs 4w 0.011/0.033
+4,"4w matches 3w (power within 0.03, coverage): items",TRUE,power 3w 0.024/0.072 vs 4w 0.023/0.056
+4,6w coverage >= 0.85 in core cells,TRUE,min 0.518
+5,unpooled beats pooled in heterogeneous-noise cells,FALSE,unpooled lower RMSE in 17% of cells
+6,comparator M1.R beats M1.0 on RMSE and coverage,FALSE,both better in 0% of core cells
+6,comparator M2.R beats M2.0 on RMSE and coverage,FALSE,both better in 20% of core cells

@@ -1,0 +1,5 @@
+rule,check,fired,detail
+1,coverage >= 0.85 in core cells: M1.0,TRUE,"cell 29 (span, d=2, ): 0.718; cell 31 (rt, d=2, ): 0.789; cell 32 (span, d=2, ): 0.826; cell 33 (items, d=2, ): 0.752; cell 34 (rt, d=2, ): 0.817"
+2,false positives <= 0.13 in core null cells: M1.0,FALSE,max 0.063
+6,comparator M1.R beats M1.0 on RMSE and coverage,FALSE,both better in 0% of core cells
+8,round 3 selection,FALSE,selected M1.0

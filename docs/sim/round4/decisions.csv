@@ -1,0 +1,5 @@
+rule,check,fired,detail
+1,coverage >= 0.85 in core cells: M1.0,TRUE,"cell 20 (span, d=1, ): 0.808; cell 21 (items, d=1, ): 0.826; cell 28 (rt, d=2, ): 0.719; cell 29 (span, d=2, ): 0.685; cell 30 (items, d=2, ): 0.730; cell 31 (rt, d=2, ): 0.807; cell 32 (span, d=2, ): 0.788; cell 33 (items, d=2, ): 0.782; cell 35 (span, d=2, ): 0.814; cell 36 (items, d=2, ): 0.818"
+2,false positives <= 0.13 in core null cells: M1.0,FALSE,max 0.066
+6,comparator M1.R beats M1.0 on RMSE and coverage,FALSE,both better in 0% of core cells
+9,round 4: M1.TOD passes rules 1 and 2 in every core cell,TRUE,"rule 1 TRUE (min coverage 0.871), rule 2 TRUE (max null FP 0.101)"
