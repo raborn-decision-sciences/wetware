@@ -196,7 +196,8 @@
     if (tab === 'system') render();
   }
   const backupDays = () => WW.prefs.get('backupDays', WW.backup.REMIND_DEFAULT);
-  const backupDue = () => WW.backup.due({ sessions, lastExport: WW.prefs.get('lastExport', null), days: backupDays(), snoozeUntil: WW.prefs.get('backupSnooze', null), now: Date.now() });
+  // Not in ?demo: sample data in a throwaway store has nothing to back up.
+  const backupDue = () => !demo && WW.backup.due({ sessions, lastExport: WW.prefs.get('lastExport', null), days: backupDays(), snoozeUntil: WW.prefs.get('backupSnooze', null), now: Date.now() });
   // ---- auto-backup folder (WW.autoBackup). state: 'unsupported' | 'off' | 'ok' | 'paused' | 'error'.
   // Never blocks a session: if Chrome has let go of the folder, the backup pauses and Ops shows a
   // one-click "Allow again" (asking needs a click; the manual export and its reminder still apply).
